@@ -12,6 +12,7 @@ const divOperator = (param1, param2) => (+param1) / (+param2);
 exports.result = (req, res, nest) => {
     const url = req.url;
     const errors = validationResult(req);
+    
 
     if (!errors.isEmpty()) {
         const err = new Error('Error');

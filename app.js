@@ -12,7 +12,7 @@ const divRoute = require('./routes/division.route');
 const app = express();
 
 app.use(bodyParser.json());
-//No permitira objetos anidados
+//No permitira objetos anidados.
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Rutas de la app
