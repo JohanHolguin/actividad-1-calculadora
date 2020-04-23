@@ -5,7 +5,7 @@ const calculator = require("./../controller/calculator.controller");
 const router = express.Router();
 
 router.post(
-    '/rest', [
+    '/division', [
         body('paramone')
         .exists()
         .withMessage('El paramatro Uno es requerido')
@@ -27,9 +27,5 @@ router.post(
     ],
     calculator.result
 );
-
-/*router.get('/rest', function(req, res) {
-    res.send('Soy la resta')
-})*/
 
 module.exports = router;

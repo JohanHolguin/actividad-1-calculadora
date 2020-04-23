@@ -5,7 +5,7 @@ const calculator = require("./../controller/calculator.controller");
 const router = express.Router();
 
 router.post(
-    '/sum', [
+    '/multiplicacion', [
         body('paramone')
         .exists()
         .withMessage('El paramatro Uno es requerido')

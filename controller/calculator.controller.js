@@ -21,16 +21,16 @@ exports.result = (req, res, nest) => {
     }
     var result = 0;
 
-    if (url == '/sum') {
+    if (url == '/suma') {
         result = sumOperator(+req.body.paramone, +req.body.paramtwo);
 
-    } else if (url == '/rest') {
+    } else if (url == '/resta') {
         result = restOperator(+req.body.paramone, +req.body.paramtwo);
 
-    } else if (url == '/mult') {
+    } else if (url == '/multiplicacion') {
         result = multOperator(+req.body.paramone, +req.body.paramtwo);
 
-    } else if (url == '/div') {
+    } else if (url == '/division') {
         result = divOperator(+req.body.paramone, +req.body.paramtwo);
     }
 
